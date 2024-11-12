@@ -1,9 +1,11 @@
 import React from 'react'
+import './Item.css'
 
-function Item() {
+function Item({title, price}) {
   return (
-    <div>
-        <h1>Hammad Ali</h1>
+    <div className="item">
+        <h1>{title}</h1>
+        <h5>{price}</h5>        
     </div>
   )
 }
